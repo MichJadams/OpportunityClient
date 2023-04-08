@@ -1,6 +1,6 @@
 from kivy.uix.screenmanager import Screen
-from components.content.screens.opportunities.opportunities_list import OpportunitiesList
-from components.content.screens.statistics.statistics_grid import StatisticsGrid
+from components.content.views.opportunities.opportunities_list import OpportunitiesList
+from components.content.views.statistics.statistics_grid import StatisticsGrid
 
 class StatisticsScreen(Screen):
     def __init__(self, **kwargs):

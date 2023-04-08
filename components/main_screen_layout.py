@@ -1,4 +1,5 @@
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
 from components.content.content_screen_manager import ContentScreenManager
 from components.navigation.navigation_container import NavigationContainer
 

@@ -1,7 +1,6 @@
 from kivy.uix.screenmanager import ScreenManager
 
-from components.content.screens.content_screens import OpportunitiesScreen, StatisticsScreen
-
+from components.content.views.content_screens import OpportunitiesScreen, StatisticsScreen
 
 class ContentScreenManager(ScreenManager):
 
