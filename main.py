@@ -1,6 +1,7 @@
 
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager
+from screens.create_account_screen import CreateAccountScreen
 from screens.dashboard_screen import DashBoardScreen
 from screens.login_screen import LoginScreen
 from kivy.storage.jsonstore import JsonStore
@@ -16,6 +17,7 @@ class OpportunityApp(App):
     def build(self):
         self.screen_manager.add_widget(LoginScreen(name='login'))
         self.screen_manager.add_widget(DashBoardScreen(name='dashboard'))
+        self.screen_manager.add_widget(CreateAccountScreen(name='create_account'))
         try:
             stored_access_token = self.user_storage.get('credentials')['access_token']
             if stored_access_token:
@@ -28,7 +30,7 @@ class OpportunityApp(App):
                     self.access_token = stored_access_token
                     self.screen_manager.current = 'dashboard'
         except:
-            pass
+            self.screen_manager.current = 'login'
         return self.screen_manager
 
 if __name__ == '__main__':
