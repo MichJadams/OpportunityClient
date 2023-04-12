@@ -17,6 +17,6 @@ class NavigationContainer(GridLayout):
         print(self.col_default_width)
         self.add_widget(Button(text='Main Dashbaord', height=10))
         self.add_widget(Button(text='Statistics',height=10))
-        self.logout_button = Button(text='Logout and Clear Credentials', height=10)
+        self.logout_button = Button(text='Logout and Clear Credentials', height=10, text_size=(60,None))
         self.logout_button.bind(on_press=self.logout)
         self.add_widget(self.logout_button)
