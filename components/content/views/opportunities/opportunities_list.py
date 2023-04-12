@@ -78,6 +78,7 @@ class OpporunityItem(GridLayout):
         self.add_widget(self.CustomLabel(self.opportunity["application_status"]))
         with self.canvas.before:
             Color(1, 0, 0, 1)
+            
             # draw the four sides of the border separately
             left = self.pos[0]
             bottom = self.pos[1]
